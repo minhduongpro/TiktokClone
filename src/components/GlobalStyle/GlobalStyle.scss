@@ -9,6 +9,7 @@
     --default-layout-horizontol-space: 24px;
     --text-color: #333;
     --height-search: 46px;
+    --font-family: TikTokFont;
 }
 
 * {
@@ -22,7 +23,7 @@ html {
 }
 
 body {
-    font-family: TikTokFont;
+    font-family: var(--font-family);
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
