@@ -22,7 +22,7 @@ import 'tippy.js/dist/tippy.css';
 import { InboxIcon, MessageIcon, UploadIcon } from '˜/components/Icons';
 import Image from '˜/components/Images';
 import Search from '../Search';
-import configRoutes from '˜/config/routes';
+import config from '˜/config';
 
 const cx = classNames.bind(style);
 
@@ -77,7 +77,7 @@ function Header() {
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <div className={cx('logo')}>
-                    <Link to={configRoutes.home} className={cx('logo-link')}>
+                    <Link to={config.routes.home} className={cx('logo-link')}>
                         <img src={images.logo} alt="Tiktok" />
                     </Link>
                 </div>
@@ -98,7 +98,7 @@ function Header() {
                                 </button>
                             </Tippy>
 
-                            <Tippy delay={200} content="Inbox" placeholder="bottom" offset={[0, 8]}>
+                            <Tippy delay={200} content="Inbox" placement="bottom" offset={[0, 8]}>
                                 <button className={cx('action-btn')}>
                                     <InboxIcon />
                                 </button>
