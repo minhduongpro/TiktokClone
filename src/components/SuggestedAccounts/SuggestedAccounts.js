@@ -12,6 +12,8 @@ function SuggestedAccounts({ lable }) {
             <AccountItem />
             <AccountItem />
             <AccountItem />
+            <AccountItem />
+            <AccountItem />
             <p className={cx('more-btn')}>See more</p>
         </div>
     );
